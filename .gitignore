@@ -1,6 +1,9 @@
 node_modules/
 dist/
+.output/
+.netlify/
 .env
+*.local
 .DS_Store
 .vscode/
 coverage/

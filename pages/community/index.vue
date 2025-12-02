@@ -226,12 +226,6 @@ const faqs = [
           <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">
             Success Stories
           </h2>
-          <NuxtLink 
-            to="/community/stories"
-            class="text-sm font-medium text-accent hover:underline"
-          >
-            View All Stories →
-          </NuxtLink>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div
