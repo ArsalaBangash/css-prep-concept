@@ -49,6 +49,109 @@
         </div>
       </div>
 
+      <!-- Application & Fee Info -->
+      <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Application & Fee Structure</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold mb-3">CSS 2026 Schedule</h3>
+            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2">
+                <UIcon name="i-lucide-calendar" class="text-accent mt-0.5 flex-shrink-0" />
+                <span><strong>Public Notice:</strong> August 10, 2025</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <UIcon name="i-lucide-calendar" class="text-accent mt-0.5 flex-shrink-0" />
+                <span><strong>Application Window:</strong> August 11-25, 2025</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <UIcon name="i-lucide-calendar" class="text-accent mt-0.5 flex-shrink-0" />
+                <span><strong>Exam Date:</strong> November 9, 2025 (Sunday)</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Fee Details</h3>
+            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+              <div class="text-2xl font-bold text-accent mb-1">Rs. 250</div>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Treasury Challan Fee</p>
+              <p class="text-xs text-gray-500 dark:text-gray-500">
+                <strong>Account Head:</strong> C02101-Organs of State Exam Fee (FPSC Receipt)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exam Centers -->
+      <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">MPT Exam Centers</h2>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+          The MPT is conducted at 19 centers across Pakistan. Choose your center during application—this choice is generally irrevocable.
+        </p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Punjab -->
+          <div class="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+            <h3 class="font-semibold text-green-800 dark:text-green-200 mb-2 flex items-center gap-2">
+              <span class="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs">9</span>
+              Punjab
+            </h3>
+            <ul class="text-sm text-green-700 dark:text-green-300 space-y-1">
+              <li>• Lahore</li>
+              <li>• Islamabad</li>
+              <li>• Rawalpindi</li>
+              <li>• Multan</li>
+              <li>• Faisalabad</li>
+              <li>• Gujranwala</li>
+              <li>• Sargodha</li>
+              <li>• Bahawalpur</li>
+              <li>• D.G. Khan</li>
+            </ul>
+          </div>
+
+          <!-- Sindh -->
+          <div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+            <h3 class="font-semibold text-blue-800 dark:text-blue-200 mb-2 flex items-center gap-2">
+              <span class="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs">4</span>
+              Sindh
+            </h3>
+            <ul class="text-sm text-blue-700 dark:text-blue-300 space-y-1">
+              <li>• Karachi</li>
+              <li>• Hyderabad</li>
+              <li>• Sukkur</li>
+              <li>• Larkana</li>
+            </ul>
+          </div>
+
+          <!-- KPK -->
+          <div class="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+            <h3 class="font-semibold text-orange-800 dark:text-orange-200 mb-2 flex items-center gap-2">
+              <span class="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-xs">3</span>
+              Khyber Pakhtunkhwa
+            </h3>
+            <ul class="text-sm text-orange-700 dark:text-orange-300 space-y-1">
+              <li>• Peshawar</li>
+              <li>• Abbottabad</li>
+              <li>• D.I. Khan</li>
+            </ul>
+          </div>
+
+          <!-- Others -->
+          <div class="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+            <h3 class="font-semibold text-purple-800 dark:text-purple-200 mb-2 flex items-center gap-2">
+              <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center text-xs">3</span>
+              Other Regions
+            </h3>
+            <ul class="text-sm text-purple-700 dark:text-purple-300 space-y-1">
+              <li>• Quetta (Balochistan)</li>
+              <li>• Gilgit (GB)</li>
+              <li>• Muzaffarabad (AJK)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <!-- Detailed Syllabus -->
       <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-6 mb-8">
         <h2 class="text-2xl font-semibold mb-6">MPT Syllabus & Distribution</h2>
@@ -198,17 +301,25 @@
             <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">66/200</div>
             <div class="text-sm text-blue-700 dark:text-blue-300">Marks Required</div>
           </div>
-          <div class="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">0</div>
-            <div class="text-sm text-purple-700 dark:text-purple-300">Negative Marking</div>
+          <div class="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
+            <div class="text-3xl font-bold text-red-600 dark:text-red-400">-0.25</div>
+            <div class="text-sm text-red-700 dark:text-red-300">Negative Marking*</div>
+          </div>
+        </div>
+
+        <!-- Negative Marking Warning -->
+        <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-4">
+          <div class="flex items-start gap-2">
+            <UIcon name="i-lucide-alert-triangle" class="text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-0.5" />
+            <div class="text-sm text-yellow-700 dark:text-yellow-300">
+              <strong>Important:</strong> Negative marking (-0.25 per wrong answer) is typically applied in MPT. 
+              Don't guess randomly—use elimination strategy. If you can eliminate 2 options, it's worth guessing.
+              <em class="block mt-1 text-xs">*Check the specific year's FPSC notice to confirm negative marking rules.</em>
+            </div>
           </div>
         </div>
 
         <div class="space-y-2">
-          <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
-            <UIcon name="i-lucide-check-circle" class="text-green-500 mt-0.5 flex-shrink-0" />
-            <span>No negative marking - attempt all questions</span>
-          </div>
           <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
             <UIcon name="i-lucide-check-circle" class="text-green-500 mt-0.5 flex-shrink-0" />
             <span>MPT marks NOT added to final merit - qualifying only</span>
@@ -220,6 +331,10 @@
           <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
             <UIcon name="i-lucide-check-circle" class="text-green-500 mt-0.5 flex-shrink-0" />
             <span>Qualified candidates proceed to written examination</span>
+          </div>
+          <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <UIcon name="i-lucide-check-circle" class="text-green-500 mt-0.5 flex-shrink-0" />
+            <span>Target 70%+ to be comfortably safe</span>
           </div>
         </div>
       </div>
@@ -315,7 +430,7 @@
         <div class="grid md:grid-cols-2 gap-4">
           <div class="flex items-start gap-2 text-sm text-red-700 dark:text-red-300">
             <UIcon name="i-lucide-x-circle" class="flex-shrink-0 mt-0.5" />
-            <span>Leaving questions unanswered (no negative marking!)</span>
+            <span>Random guessing (negative marking applies!)</span>
           </div>
           <div class="flex items-start gap-2 text-sm text-red-700 dark:text-red-300">
             <UIcon name="i-lucide-x-circle" class="flex-shrink-0 mt-0.5" />
@@ -336,6 +451,35 @@
           <div class="flex items-start gap-2 text-sm text-red-700 dark:text-red-300">
             <UIcon name="i-lucide-x-circle" class="flex-shrink-0 mt-0.5" />
             <span>Overthinking simple questions</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strategic Insight -->
+      <div class="bg-accent/10 border border-accent/30 rounded-xl p-6 mb-8">
+        <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+          <UIcon name="i-lucide-lightbulb" class="text-accent" />
+          Strategic Insight
+        </h2>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+          Serious aspirants don't view MPT as just a hurdle—they use it as a <strong>diagnostic tool</strong>. 
+          A high score in MPT (especially in English and General Ability sections) correlates strongly with 
+          preparedness for the main written examination.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div class="p-3 bg-white dark:bg-gray-900 rounded-lg">
+            <h4 class="font-semibold mb-1">Content Overlap</h4>
+            <p class="text-gray-600 dark:text-gray-400">
+              MPT's General Knowledge section (Current Affairs + Pakistan Affairs) effectively jumpstarts 
+              your preparation for the written papers.
+            </p>
+          </div>
+          <div class="p-3 bg-white dark:bg-gray-900 rounded-lg">
+            <h4 class="font-semibold mb-1">Parallel Preparation</h4>
+            <p class="text-gray-600 dark:text-gray-400">
+              Dedicate 1 hour daily for MPT MCQ practice while preparing for written exam. 
+              Don't treat them as separate—they reinforce each other.
+            </p>
           </div>
         </div>
       </div>

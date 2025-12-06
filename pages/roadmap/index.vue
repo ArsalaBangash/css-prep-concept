@@ -186,6 +186,45 @@ const keyTips = [
   },
 ]
 
+// Common mistakes aspirants make
+const commonMistakes = [
+  {
+    mistake: 'Ignoring English until "later"',
+    consequence: 'Then failing Essay/Precis despite good subject knowledge',
+    fix: 'Start English from Day 1. Read daily, write weekly from month 1.',
+  },
+  {
+    mistake: 'Over-focusing on 1-2 subjects',
+    consequence: 'Neglecting others and failing compulsory papers',
+    fix: 'Balance all subjects. Use the weekly rotation schedule above.',
+  },
+  {
+    mistake: 'Treating CSS as a memory test',
+    consequence: 'Writing answers that regurgitate facts without analysis',
+    fix: 'Focus on understanding concepts. Practice analytical writing.',
+  },
+  {
+    mistake: 'Changing optionals midway',
+    consequence: 'Wasting months of preparation, starting from scratch',
+    fix: 'Research thoroughly BEFORE committing. Lock subjects by month 3.',
+  },
+  {
+    mistake: 'Making notes that are too long',
+    consequence: 'Impossible to revise before exam, causing panic',
+    fix: 'Max 2-4 pages per major topic. Use bullet points, not paragraphs.',
+  },
+  {
+    mistake: 'No timed answer writing practice',
+    consequence: 'Running out of time in exam, incomplete answers',
+    fix: 'Practice with stopwatch from month 8. Write full papers under exam conditions.',
+  },
+  {
+    mistake: 'Too much academy hopping',
+    consequence: 'Confusion, inconsistent methodology, wasted money',
+    fix: 'Choose ONE approach (academy or self-study) and commit to it.',
+  },
+]
+
 function getPhaseColor(color: string) {
   const colors: Record<string, { bg: string; text: string; border: string }> = {
     blue: {
@@ -380,6 +419,45 @@ function getPhaseColor(color: string) {
               <div>
                 <h3 class="font-semibold text-gray-900 dark:text-white mb-1">{{ tip.title }}</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-400">{{ tip.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Mistakes -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+          7 Common Mistakes to Avoid
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">
+          These pitfalls derail thousands of CSS aspirants every year. Learn from their mistakes.
+        </p>
+        <div class="bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-900/30 rounded-xl overflow-hidden">
+          <div class="divide-y divide-red-200 dark:divide-red-900/30">
+            <div 
+              v-for="(item, index) in commonMistakes" 
+              :key="index"
+              class="p-5"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                  {{ index + 1 }}
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-semibold text-red-800 dark:text-red-200 mb-1">
+                    {{ item.mistake }}
+                  </h3>
+                  <p class="text-sm text-red-700 dark:text-red-300 mb-2">
+                    <strong>Result:</strong> {{ item.consequence }}
+                  </p>
+                  <div class="flex items-start gap-2 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-900/30">
+                    <UIcon name="i-lucide-check-circle" class="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                    <p class="text-sm text-green-700 dark:text-green-300">
+                      <strong>Fix:</strong> {{ item.fix }}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
