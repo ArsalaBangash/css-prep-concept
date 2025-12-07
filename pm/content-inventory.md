@@ -22,113 +22,118 @@ This document maps research findings to current site content, identifying gaps a
 
 | Topic | Research Coverage | Site Status | Gap |
 |-------|-------------------|-------------|-----|
-| Exam stages overview | Detailed | ✅ Good | Minor enhancements |
-| MPT syllabus breakdown | Detailed (200 MCQs, sections) | ⚠️ Partial | Add section weights |
-| MPT exam centers (19 cities) | Complete list | ❌ Missing | Add full list |
-| MPT fee structure | Rs. 250, account details | ❌ Missing | Add details |
-| MPT negative marking | -0.25 per wrong | ❌ Missing | Add warning |
-| Written exam schedule | Feb 4, 2026 | ✅ Good | Current |
-| Eligibility age calculation | Dec 31 of preceding year | ⚠️ Vague | Clarify |
-| Attempt counting rules | 3 attempts, examples | ⚠️ Basic | Add examples |
-| Dual nationality rules | Must renounce | ⚠️ Basic | Expand |
-| Service groups details | 12 groups listed | ✅ Good | Could add more detail |
-| Psychological assessment | WAT, TAT, Group tasks | ❌ Missing page | Create new page |
-| Interview panel composition | Chairman + experts, 20-45 min | ⚠️ Basic | Expand significantly |
+| Exam stages overview | Detailed | ✅ Good | - |
+| MPT syllabus breakdown | Detailed (200 MCQs, sections) | ✅ Enhanced | - |
+| MPT exam centers (19 cities) | Complete list | ✅ Added | - |
+| MPT fee structure | Rs. 250, account details | ✅ Added | - |
+| MPT negative marking | -0.25 per wrong | ✅ Added | - |
+| Written exam schedule | Feb 4, 2026 | ✅ Good | - |
+| Eligibility age calculation | Dec 31 of preceding year | ✅ Clarified | - |
+| Attempt counting rules | 3 attempts, examples | ✅ Enhanced | - |
+| Dual nationality rules | Must renounce | ✅ Enhanced | - |
+| Service groups details | 12 groups listed | ✅ Good | - |
+| Psychological assessment | WAT, TAT, Group tasks | ✅ NEW PAGE | `/exam/psychological.vue` |
+| Interview panel composition | Chairman + experts, 20-45 min | ✅ Enhanced | - |
 | Medical requirements | Basic mention | ⚠️ Basic | Could expand |
 
 ### Syllabus Coverage
 
 | Topic | Research Coverage | Site Status | Gap |
 |-------|-------------------|-------------|-----|
-| Compulsory subjects overview | Detailed | ✅ Good | Minor enhancements |
+| Compulsory subjects overview | Detailed | ✅ Good | - |
 | Optional groups structure | Complete | ✅ Good | - |
-| Subject scoring trends | Year-by-year data | ⚠️ Generic | Add specific years |
-| "Targeting" phenomenon | Explained in research | ❌ Missing | Add explanation |
-| Subject volatility warnings | IR, Gender Studies, USA History | ⚠️ Partial | Make explicit |
-| Regional languages scoring | 70-80/100 "hidden gems" | ❌ Missing | Highlight this |
-| Golden combinations | Multiple suggested | ⚠️ Basic | Expand with rationale |
+| Subject scoring trends | Year-by-year data | ✅ Enhanced | - |
+| "Targeting" phenomenon | Explained in research | ✅ Added | `/syllabus/trends.vue` |
+| Subject volatility warnings | IR, Gender Studies, USA History | ✅ Added | - |
+| Regional languages scoring | 70-80/100 "hidden gems" | ✅ Added | - |
+| Golden combinations | Multiple suggested | ✅ Enhanced | - |
 
 ### Subject-Specific Content
 
 | Subject | Research Coverage | Site Status | Gap |
 |---------|-------------------|-------------|-----|
-| English Essay | Extensive (structure, PEEL, themes) | ✅ Good page | Could add more themes |
-| English Precis | Books, technique | ⚠️ Mentioned | Could have own page |
-| GSA | Shafiq vs Kashmiri debate | ⚠️ Basic | Add book comparison |
-| Pakistan Affairs | Books, overlap strategy | ⚠️ Basic | Expand |
-| Current Affairs | Sources, methodology | ⚠️ Basic | Expand methodology |
-| Islamic Studies | Books, issue-based prep | ⚠️ Basic | Expand |
-| International Relations | Full analysis | ❌ No dedicated page | Create |
-| Political Science | Full analysis | ❌ No dedicated page | Create |
-| Criminology | Full analysis | ❌ No dedicated page | Create |
-| Sociology | Mentioned | ❌ No dedicated page | Create |
-| Environmental Science | "Rising star" analysis | ❌ No dedicated page | Create |
-| Psychology | Mentioned | ❌ No dedicated page | Create |
-| Economics | Warning about low scoring | ❌ No dedicated page | Create |
-| European History | "Trending" alternative | ❌ No dedicated page | Create |
-| History of USA | "Targeted" warning | ❌ No dedicated page | Create |
-| Public Administration | Mentioned | ❌ No dedicated page | Create |
+| English Essay | Extensive (structure, PEEL, themes) | ✅ Enhanced | Past papers 2020-2024, outline template added |
+| English Precis | Books, technique | ⚠️ Mentioned | **AGENT TASK: Create `/prep/precis.vue`** |
+| GSA | Shafiq vs Kashmiri debate | ⚠️ Basic | **AGENT TASK: Add book comparison** |
+| Pakistan Affairs | Books, overlap strategy | ⚠️ Basic | AGENT TASK: Expand |
+| Current Affairs | Sources, methodology | ⚠️ Basic | AGENT TASK: Expand methodology |
+| Islamic Studies | Books, issue-based prep | ⚠️ Basic | AGENT TASK: Expand |
+| International Relations | Full analysis | ✅ Created | `/subjects/international-relations.vue` |
+| Political Science | Full analysis | ✅ Created | `/subjects/political-science.vue` |
+| Criminology | Full analysis | ✅ Created | `/subjects/criminology.vue` |
+| Environmental Science | "Rising star" analysis | ✅ Created | `/subjects/environmental-science.vue` |
+| Sociology | Mentioned | ❌ Missing | **AGENT TASK: Create `/subjects/sociology.vue`** |
+| European History | "Trending" alternative | ❌ Missing | **AGENT TASK: Create `/subjects/european-history.vue`** |
+| History of USA | "Targeted" warning | ❌ Missing | **AGENT TASK: Create `/subjects/history-of-usa.vue`** |
+| Public Administration | Mentioned | ❌ Missing | **AGENT TASK: Create `/subjects/public-administration.vue`** |
+| Psychology | Mentioned | ❌ Missing | Lower priority |
+| Economics | Warning about low scoring | ❌ Missing | Lower priority |
 
 ### Resources
 
 | Resource Type | Research Coverage | Site Status | Gap |
 |---------------|-------------------|-------------|-----|
-| Book recommendations | Detailed per subject | ⚠️ Generic list | Subject-specific pages |
-| YouTube channels | Study River, CSS Club, etc. | ❌ Missing | Add section |
-| Think tanks | PIDE, IPRI, ISSI, IPS | ❌ Missing | Add section |
-| FPSC official links | Syllabus PDF, past papers | ❌ Missing | Add direct links |
-| Economic Survey | Emphasized heavily | ❌ Not mentioned | Add as key resource |
-| Periodicals | JWT, Economist, Foreign Affairs | ⚠️ Partial | Expand |
-| Academy comparisons | NOA, World Times, Nearpeer | ⚠️ Basic | Expand |
+| Book recommendations | Detailed per subject | ✅ Enhanced | Subject pages have specific books |
+| YouTube channels | Study River, CSS Club, etc. | ✅ Added | `/resources/index.vue` |
+| Think tanks | PIDE, IPRI, ISSI, IPS | ✅ Added | `/resources/index.vue` |
+| FPSC official links | Syllabus PDF, past papers | ✅ Added | `/resources/index.vue` |
+| Economic Survey | Emphasized heavily | ✅ Added | `/resources/index.vue` |
+| Periodicals | JWT, Economist, Foreign Affairs | ✅ Enhanced | - |
+| Academy comparisons | NOA, World Times, Nearpeer | ✅ Enhanced | `/resources/academies.vue` |
 
 ### Preparation Strategy
 
 | Topic | Research Coverage | Site Status | Gap |
 |-------|-------------------|-------------|-----|
-| 18-month timeline | Detailed phases | ✅ Good | Minor refinements |
-| Daily routine | Hour-by-hour | ✅ Good | - |
+| 18-month timeline | Detailed phases | ✅ Enhanced | - |
+| Daily routine | Hour-by-hour | ✅ Enhanced | - |
 | Phase milestones | Specific outputs | ✅ Good | - |
-| Common mistakes (7) | Detailed list | ❌ Missing | Add section |
-| Note-making methodology | 2-4 pages/topic, structure | ❌ Missing | Add section |
+| Common mistakes (7) | Detailed list | ✅ Added | `/roadmap/index.vue` |
+| Note-making methodology | 2-4 pages/topic, structure | ❌ Missing | Lower priority |
 | Answer writing technique | 50% knowledge, 50% presentation | ✅ Good page | - |
-| Academy vs self-study | Pros/cons analysis | ⚠️ Basic | Expand with data |
+| Academy vs self-study | Pros/cons analysis | ✅ Enhanced | - |
 
 ---
 
 ## Priority Gap Closures
 
-### 🔴 Critical (Week 1)
+### 🔴 Critical (Week 1) ✅ ALL COMPLETE
 
-| Gap | Action | Est. Effort |
-|-----|--------|-------------|
-| MPT centers/fees/negative marking | Enhance `/exam/mpt` | 1 hour |
-| YouTube channels | Add to `/resources` | 1 hour |
-| Think tanks | Add to `/resources` | 30 min |
-| FPSC official links | Add to `/resources` | 30 min |
-| 7 Common Mistakes | Add to `/roadmap` | 1 hour |
-| Eligibility clarifications | Enhance `/exam/eligibility` | 30 min |
+| Gap | Action | Status |
+|-----|--------|--------|
+| MPT centers/fees/negative marking | Enhance `/exam/mpt` | ✅ Done |
+| YouTube channels | Add to `/resources` | ✅ Done |
+| Think tanks | Add to `/resources` | ✅ Done |
+| FPSC official links | Add to `/resources` | ✅ Done |
+| 7 Common Mistakes | Add to `/roadmap` | ✅ Done |
+| Eligibility clarifications | Enhance `/exam/eligibility` | ✅ Done |
+| Targeting explanation | Add to `/syllabus/trends` | ✅ Done |
+| Psychological Assessment | Create `/exam/psychological` | ✅ Done |
 
-### 🟡 High (Weeks 2-3)
+### 🟡 High (Weeks 2-3) 🔄 IN PROGRESS
 
-| Gap | Action | Est. Effort |
-|-----|--------|-------------|
-| International Relations page | Create `/subjects/international-relations` | 3 hours |
-| Political Science page | Create `/subjects/political-science` | 3 hours |
-| Criminology page | Create `/subjects/criminology` | 2 hours |
-| Environmental Science page | Create `/subjects/environmental-science` | 2 hours |
-| Sociology page | Create `/subjects/sociology` | 2 hours |
-| Psychological Assessment page | Create `/exam/psychological` | 2 hours |
-| Interview page enhancement | Enhance `/exam/interview` | 2 hours |
-| "Targeting" explanation | Add to `/syllabus/trends` | 1 hour |
+| Gap | Action | Status |
+|-----|--------|--------|
+| International Relations page | Create `/subjects/international-relations` | ✅ Done |
+| Political Science page | Create `/subjects/political-science` | ✅ Done |
+| Criminology page | Create `/subjects/criminology` | ✅ Done |
+| Environmental Science page | Create `/subjects/environmental-science` | ✅ Done |
+| Sociology page | Create `/subjects/sociology` | **❌ AGENT TASK** |
+| European History page | Create `/subjects/european-history` | **❌ AGENT TASK** |
+| History of USA page | Create `/subjects/history-of-usa` | **❌ AGENT TASK** |
+| Public Administration page | Create `/subjects/public-administration` | **❌ AGENT TASK** |
+| Interview page enhancement | Enhance `/exam/interview` | ✅ Done |
+| Essay past papers | Add to `/prep/essay` | ✅ Done |
 
 ### 🟢 Medium (Week 4+)
 
-| Gap | Action | Est. Effort |
-|-----|--------|-------------|
-| Remaining subject pages (10+) | Create individual pages | 15 hours |
-| Note-making guide | Create `/prep/note-making` | 2 hours |
-| Subject-specific book pages | Reorganize resources | 3 hours |
-| Scoring volatility data | Enhance trends page | 2 hours |
+| Gap | Action | Status |
+|-----|--------|--------|
+| English Precis guide | Create `/prep/precis` | **❌ AGENT TASK** |
+| GSA book comparison | Enhance compulsory page | **❌ AGENT TASK** |
+| Remaining subject pages (Psychology, Economics) | Create individual pages | ❌ Pending |
+| Note-making guide | Create `/prep/note-making` | ❌ Pending |
+| Subject-specific book pages | Reorganize resources | ❌ Pending |
 
 ---
 
