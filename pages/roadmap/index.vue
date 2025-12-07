@@ -14,7 +14,6 @@ const aspirantProfiles = [
     challenges: ['Maintaining discipline without structure', 'Financial pressure', 'Social stigma', 'Burnout risk'],
     advantage: 'Can follow textbook timelines if disciplined',
     dailyHours: '8-10 hours',
-    successRate: 'High (if disciplined)',
   },
   {
     id: 'student',
@@ -23,7 +22,6 @@ const aspirantProfiles = [
     challenges: ['Competing priorities (exams, assignments)', 'Limited deep-work time', 'Social distractions', 'Energy depletion'],
     advantage: 'Fresh learning mindset, academic rigor habit',
     dailyHours: '3-5 hours (7-8 on weekends)',
-    successRate: 'Moderate (needs 18-24 months)',
   },
   {
     id: 'job',
@@ -32,7 +30,6 @@ const aspirantProfiles = [
     challenges: ['Job fatigue', 'Family obligations', 'Limited revision time', 'Exam leave constraints'],
     advantage: 'Financial stability, real-world perspective',
     dailyHours: '2-3 hours (5-6 on weekends)',
-    successRate: 'Challenging (needs 24-30 months)',
   },
 ]
 
@@ -473,10 +470,8 @@ function getPhaseColor(color: string) {
                 <span class="font-medium text-accent"> {{ profile.dailyHours }}</span>
               </div>
               <div>
-                <span class="text-gray-500">Success Rate:</span>
-                <span :class="profile.successRate.includes('High') ? 'text-green-600 dark:text-green-400' : profile.successRate.includes('Moderate') ? 'text-yellow-600 dark:text-yellow-400' : 'text-orange-600 dark:text-orange-400'">
-                  {{ profile.successRate }}
-                </span>
+                <span class="text-gray-500">Advantage:</span>
+                <span class="text-gray-700 dark:text-gray-300"> {{ profile.advantage }}</span>
               </div>
               <div class="pt-2 border-t border-gray-200 dark:border-gray-700">
                 <div class="text-xs text-gray-500 mb-1">Key Challenges:</div>
@@ -490,19 +485,7 @@ function getPhaseColor(color: string) {
           </div>
         </div>
 
-        <!-- Reality Check Banner -->
-        <div class="bg-orange-50 dark:bg-orange-900/20 border-2 border-orange-300 dark:border-orange-700 rounded-xl p-5">
-          <div class="flex items-start gap-3">
-            <UIcon name="i-lucide-alert-circle" class="text-orange-600 dark:text-orange-400 text-xl mt-0.5 flex-shrink-0" />
-            <div class="text-sm">
-              <p class="font-semibold text-orange-800 dark:text-orange-200 mb-1">Reality Check from a Good Coach:</p>
-              <p class="text-orange-700 dark:text-orange-300">
-                If you're working full-time, <strong>18 months is unrealistic</strong>. Plan for 24-30 months. If you're a student managing university, plan for 20-24 months. 
-                Only full-time droppers with discipline can genuinely aim for 18 months. Don't compare your progress to someone with different constraints.
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </UContainer>
     </div>
 
