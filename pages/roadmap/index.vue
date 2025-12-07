@@ -301,6 +301,81 @@ const honestTips = [
   },
 ]
 
+const timelineMatrix = [
+  {
+    phase: 'Foundation',
+    focus: 'English, vocabulary, subject selection',
+    durations: {
+      fulltime: 'Months 1-4',
+      student: 'Months 1-6',
+      job: 'Months 1-8',
+    },
+  },
+  {
+    phase: 'Subject Mastery',
+    focus: 'Full syllabus coverage + note making',
+    durations: {
+      fulltime: 'Months 5-10',
+      student: 'Months 5-14',
+      job: 'Months 5-18',
+    },
+  },
+  {
+    phase: 'Writing Intensive',
+    focus: 'Essay, past papers, evaluation',
+    durations: {
+      fulltime: 'Months 11-14',
+      student: 'Months 15-20',
+      job: 'Months 19-24',
+    },
+  },
+  {
+    phase: 'Revision & Mocks',
+    focus: 'Mocks, data updates, memory work',
+    durations: {
+      fulltime: 'Months 15-18',
+      student: 'Months 21-24',
+      job: 'Months 25-30',
+    },
+  },
+  {
+    phase: 'Buffer & Recovery',
+    focus: 'Unexpected delays, health, travel, retakes',
+    durations: {
+      fulltime: 'Add 4 spare weeks',
+      student: 'Add 6 spare weeks',
+      job: 'Add 8-10 spare weeks',
+    },
+  },
+]
+
+const recoveryPlaybook = [
+  {
+    scenario: 'University exam month blows up schedule',
+    profile: 'Student',
+    trigger: '3-4 weeks of internal assessments / finals',
+    plan: 'Switch to maintenance mode: newspaper summaries + English drills only. Block two heavy catch-up weekends immediately after exams.',
+  },
+  {
+    scenario: 'Corporate project with overtime',
+    profile: 'Working Professional',
+    trigger: '4-6 weeks of crunch with no evenings free',
+    plan: 'Protect mornings for English + CA (45 mins). Shift optional subjects entirely to weekends. Apply for 5-day study leave once project ends.',
+  },
+  {
+    scenario: 'Burnout / zero motivation',
+    profile: 'All',
+    trigger: 'No progress for 10 days, sleep + stress issues',
+    plan: 'Take a deliberate 72-hour break. Reset with light reading, exercise, journaling. Re-enter with half-days for a week before full load.',
+  },
+  {
+    scenario: 'Falling behind on writing practice',
+    profile: 'All',
+    trigger: 'Less than 1 essay/week for a month',
+    plan: 'Introduce "Daily 30"—30-minute timed writing sprint every weekday morning. Full essay only on weekends until backlog resolves.',
+  },
+]
+
 // Common mistakes aspirants make
 const commonMistakes = [
   {
@@ -651,6 +726,44 @@ function getPhaseColor(color: string) {
         </div>
       </section>
 
+      <!-- Phase Timeline Snapshot -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+          Phase Timeline Snapshot
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-4">
+          Keep this matrix handy. It shows exactly how long each phase realistically lasts for every profile.
+        </p>
+        <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
+                  <th class="px-4 py-3 text-left font-medium">Phase</th>
+                  <th class="px-4 py-3 text-left font-medium">Main Focus</th>
+                  <th class="px-4 py-3 text-left font-medium">Full-Time Dropper</th>
+                  <th class="px-4 py-3 text-left font-medium">University Student</th>
+                  <th class="px-4 py-3 text-left font-medium">Working Professional</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+                <tr 
+                  v-for="row in timelineMatrix" 
+                  :key="row.phase"
+                  class="hover:bg-gray-50 dark:hover:bg-gray-800/50"
+                >
+                  <td class="px-4 py-3 font-semibold text-gray-900 dark:text-white">{{ row.phase }}</td>
+                  <td class="px-4 py-3 text-gray-600 dark:text-gray-400">{{ row.focus }}</td>
+                  <td class="px-4 py-3 text-blue-700 dark:text-blue-300">{{ row.durations.fulltime }}</td>
+                  <td class="px-4 py-3 text-purple-700 dark:text-purple-300">{{ row.durations.student }}</td>
+                  <td class="px-4 py-3 text-orange-700 dark:text-orange-300">{{ row.durations.job }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       <!-- Honest Coaching Tips -->
       <section class="mb-12">
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -673,6 +786,32 @@ function getPhaseColor(color: string) {
                 <h3 class="font-semibold text-gray-900 dark:text-white mb-1">{{ tip.title }}</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-400">{{ tip.description }}</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Setback Playbook -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+          Setback Playbook
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">
+          Life will interrupt this plan. Use these pre-defined responses to bounce back fast instead of improvising in panic.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div 
+            v-for="item in recoveryPlaybook"
+            :key="item.scenario"
+            class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-5"
+          >
+            <div class="text-xs uppercase tracking-wide text-accent font-semibold mb-1">{{ item.profile }}</div>
+            <h3 class="font-semibold text-gray-900 dark:text-white mb-2">{{ item.scenario }}</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              <strong>Trigger:</strong> {{ item.trigger }}
+            </p>
+            <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg text-sm text-gray-700 dark:text-gray-300">
+              <strong>Plan:</strong> {{ item.plan }}
             </div>
           </div>
         </div>

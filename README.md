@@ -7,7 +7,7 @@ A comprehensive hub for Pakistani students preparing for the CSS (Central Superi
 - **Exam Overview**: Complete guide to CSS examination stages, eligibility, and service groups
 - **Syllabus Coverage**: Detailed breakdown of compulsory and optional subjects with scoring trends
 - **Resources Library**: Curated books, past papers, video lectures, and study materials
-- **Preparation Roadmap**: 18-month strategic preparation plan with phase-wise guidance
+- **Preparation Roadmap**: 18-month strategic preparation plan with phase timeline snapshots and a setback recovery playbook
 - **Current Affairs Hub**: Daily updates and analysis of national and international affairs
 - **Community**: Connect with fellow aspirants, mentors, and CSS qualifiers
 
@@ -98,10 +98,11 @@ The website uses a clean, professional design inspired by the original Grey Soft
 - Academy recommendations
 
 ### Roadmap
-- 4-phase preparation plan
-- Daily routine suggestions
-- Milestone tracking
-- Key preparation tips
+- 4-phase preparation plan covering Foundation, Acceleration, Specialization, and Refinement
+- Daily routine suggestions mapped to each phase
+- Phase timeline snapshot table to visualize workload distribution
+- Setback recovery playbook with tactical fixes for common blockers
+- Key preparation tips tailored to working professionals and full-time aspirants
 
 ### Current Affairs
 - Topic-wise coverage
