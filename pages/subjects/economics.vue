@@ -23,7 +23,7 @@ const syllabus = {
     { topic: 'Market Structures: Perfect competition, monopoly, oligopoly, monopolistic competition', weight: 'High' },
     { topic: 'Factor Pricing: Wage, rent, interest, profit theories', weight: 'Medium' },
     { topic: 'Welfare Economics: Pareto optimality, market failure, externalities, public goods', weight: 'High' },
-    { topic: 'International Trade: Comparative advantage, trade policies, WTO, Pakistan's trade dynamics', weight: 'Very High' },
+    { topic: 'International Trade: Comparative advantage, trade policies, WTO, Pakistan\'s trade dynamics', weight: 'Very High' },
   ],
   paper2: [
     { topic: 'Macroeconomics: National income, GDP/GNP, inflation, unemployment, business cycles', weight: 'Very High' },
@@ -44,7 +44,7 @@ const books = [
 
 const onlineResources = [
   { name: 'Khan Academy Economics', type: 'Course', description: 'Micro + Macro playlists with visual explanations' },
-  { name: 'PIDE Policy Briefs', type: 'Website', description: 'Latest data on Pakistan's debt, inflation, trade' },
+  { name: 'PIDE Policy Briefs', type: 'Website', description: 'Latest data on Pakistan\'s debt, inflation, trade' },
   { name: 'State Bank of Pakistan Annual Report', type: 'Document', description: 'Monetary policy, banking stats, inflation targets' },
   { name: 'The Economist Magazine', type: 'Magazine', description: 'Use for global economic trends and terminology' },
 ]
@@ -60,7 +60,7 @@ const commonMistakes = [
   { mistake: 'Using outdated Economic Survey data', fix: 'Quote the latest Economic Survey (June 2025) GDP, inflation, and trade figures' },
   { mistake: 'Writing theory without Pakistan examples', fix: 'Every macro answer must mention SBP policy, CPEC, or IMF conditions' },
   { mistake: 'Skipping graphs and diagrams', fix: 'Draw supply-demand curves, IS-LM, AD-AS for visual clarity' },
-  { mistake: 'Ignoring global context', fix: 'Relate Pakistan's economy to WTO, oil prices, China-US trade tensions' },
+  { mistake: 'Ignoring global context', fix: 'Relate Pakistan\'s economy to WTO, oil prices, China-US trade tensions' },
 ]
 
 const scoringHistory = [

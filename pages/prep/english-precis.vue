@@ -56,7 +56,7 @@ const commonMistakes = [
   { mistake: 'Exceeding 1/3rd word limit', fix: 'Practice counting words. If passage is 270 words, target 90 (80-95 range acceptable).' },
   { mistake: 'Using first-person or changing tone', fix: 'Always write in 3rd person. If passage is serious, keep precis serious; if persuasive, stay persuasive.' },
   { mistake: 'Including examples from passage', fix: 'Strip all illustrations. Only keep the main argument or thesis statement.' },
-  { mistake: 'Skipping Wren & Martin basics', fix: 'Even if you're fluent, review tenses, voice, narration rules—examiners expect technical accuracy.' },
+  { mistake: 'Skipping Wren & Martin basics', fix: 'Even if you\'re fluent, review tenses, voice, narration rules—examiners expect technical accuracy.' },
   { mistake: 'Ignoring GRE/SAT-level vocabulary', fix: 'CSS vocab questions come from advanced lists. Use Exploring the World of English or Norman Lewis.' },
   { mistake: 'No title for precis', fix: 'Always provide a 3-6 word title summarizing the passage theme.' },
 ]
