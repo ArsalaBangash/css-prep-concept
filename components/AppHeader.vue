@@ -51,11 +51,12 @@ const resourcesDropdown = [
 
 const prepDropdown = [
   { label: 'Preparation Roadmap', to: '/roadmap', icon: 'i-lucide-map' },
-  { label: '18-Month Plan', to: '/roadmap/18-month', icon: 'i-lucide-calendar-days' },
   { label: 'Current Affairs', to: '/current-affairs', icon: 'i-lucide-newspaper' },
   { label: 'Essay Writing', to: '/prep/essay', icon: 'i-lucide-pen' },
   { label: 'Answer Writing', to: '/prep/answer-writing', icon: 'i-lucide-edit' },
   { label: 'Mock Tests', to: '/prep/mock-tests', icon: 'i-lucide-clipboard-check' },
+  { label: 'English Precis', to: '/prep/english-precis', icon: 'i-lucide-file-text' },
+  { label: 'GSA Strategy', to: '/prep/gsa', icon: 'i-lucide-flask' },
 ]
 
 // Check if current route matches any dropdown item
