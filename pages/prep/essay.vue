@@ -265,6 +265,138 @@
         </div>
       </div>
 
+      <!-- Past Paper Topics Analysis -->
+      <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Past Paper Topics (2022-2024)</h2>
+        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+          Recent FPSC essay topics with difficulty and category analysis:
+        </p>
+        
+        <div class="space-y-4">
+          <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+            <h3 class="font-semibold text-accent mb-2">CSS 2024</h3>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-xs">Economic</span>
+                <span class="text-gray-600 dark:text-gray-400">Pakistan's Economic Crisis: Causes & Solutions</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded text-xs">Environment</span>
+                <span class="text-gray-600 dark:text-gray-400">Climate Change: A Global Emergency</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded text-xs">Governance</span>
+                <span class="text-gray-600 dark:text-gray-400">Judicial Activism vs Judicial Restraint</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded text-xs">Tech</span>
+                <span class="text-gray-600 dark:text-gray-400">AI: Opportunity or Existential Threat?</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+            <h3 class="font-semibold text-accent mb-2">CSS 2023</h3>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded text-xs">International</span>
+                <span class="text-gray-600 dark:text-gray-400">Deglobalization: Myth or Reality?</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-xs">Social</span>
+                <span class="text-gray-600 dark:text-gray-400">Mental Health Crisis in Modern Society</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded text-xs">Philosophy</span>
+                <span class="text-gray-600 dark:text-gray-400">"It is better to be feared than loved" - Machiavelli</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded text-xs">Environment</span>
+                <span class="text-gray-600 dark:text-gray-400">Water Wars: The Next Global Conflict?</span>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold text-accent mb-2">CSS 2022</h3>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded text-xs">Governance</span>
+                <span class="text-gray-600 dark:text-gray-400">The Future of Democracy in Pakistan</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded text-xs">Tech</span>
+                <span class="text-gray-600 dark:text-gray-400">Social Media: Tool for Change or Division?</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-xs">Economic</span>
+                <span class="text-gray-600 dark:text-gray-400">CPEC: Opportunities and Challenges</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded text-xs">Philosophy</span>
+                <span class="text-gray-600 dark:text-gray-400">Knowledge vs. Wisdom in the Modern Age</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sample Essay Outline Template -->
+      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Sample Essay Outline Template</h2>
+        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+          Use this framework for any topic. Spend 15-20 minutes planning before writing.
+        </p>
+        
+        <div class="bg-white dark:bg-gray-900 rounded-lg p-4 font-mono text-sm">
+          <p class="text-gray-500 mb-2"># Topic: "Artificial Intelligence: Opportunity or Threat?"</p>
+          <div class="space-y-3 text-gray-700 dark:text-gray-300">
+            <div>
+              <p class="font-bold">INTRODUCTION</p>
+              <p class="ml-4">- Hook: "By 2030, AI will contribute $15.7 trillion to global GDP" (PwC)</p>
+              <p class="ml-4">- Context: Define AI, brief history</p>
+              <p class="ml-4">- Thesis: "While AI presents risks, strategic adoption can revolutionize Pakistan's economy"</p>
+            </div>
+            <div>
+              <p class="font-bold">BODY PARA 1: Economic Opportunities</p>
+              <p class="ml-4">- Healthcare: AI diagnostics (IBM Watson example)</p>
+              <p class="ml-4">- Agriculture: Precision farming (30% yield increase)</p>
+              <p class="ml-4">- Data: McKinsey projections</p>
+            </div>
+            <div>
+              <p class="font-bold">BODY PARA 2: Employment Risks</p>
+              <p class="ml-4">- WEF: 85 million jobs displaced by 2025</p>
+              <p class="ml-4">- But: 97 million new jobs created</p>
+              <p class="ml-4">- Pakistan context: IT sector growth</p>
+            </div>
+            <div>
+              <p class="font-bold">BODY PARA 3: Ethical Concerns</p>
+              <p class="ml-4">- Bias in algorithms (COMPAS example)</p>
+              <p class="ml-4">- Privacy issues (facial recognition)</p>
+              <p class="ml-4">- Deepfakes and misinformation</p>
+            </div>
+            <div>
+              <p class="font-bold">BODY PARA 4: Pakistan's Position</p>
+              <p class="ml-4">- Current AI policy (2023)</p>
+              <p class="ml-4">- NESCOM, NUST initiatives</p>
+              <p class="ml-4">- Challenges: infrastructure, talent</p>
+            </div>
+            <div>
+              <p class="font-bold">BODY PARA 5: Way Forward</p>
+              <p class="ml-4">- Regulatory framework</p>
+              <p class="ml-4">- Education reform</p>
+              <p class="ml-4">- Public-private partnerships</p>
+            </div>
+            <div>
+              <p class="font-bold">CONCLUSION</p>
+              <p class="ml-4">- Summary of key points</p>
+              <p class="ml-4">- Restate thesis differently</p>
+              <p class="ml-4">- Quote: "AI is not about replacing humans; it's about augmenting humanity" - Satya Nadella</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Quotations Bank -->
       <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-6 mb-8">
         <h2 class="text-2xl font-semibold mb-4">Essential Quotations Bank</h2>

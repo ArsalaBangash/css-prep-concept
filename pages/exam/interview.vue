@@ -59,7 +59,7 @@
             </div>
             <div>
               <h2 class="text-xl font-semibold">Psychological Assessment</h2>
-              <p class="text-sm text-gray-500">Conducted before the interview</p>
+              <p class="text-sm text-gray-500">3-4 days at ISSB centers</p>
             </div>
           </div>
           
@@ -67,13 +67,13 @@
             <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
               <h4 class="font-medium text-sm mb-1">Written Tests</h4>
               <p class="text-xs text-gray-600 dark:text-gray-400">
-                Personality inventories, situational judgment tests, and aptitude assessments
+                WAT (Word Association), TAT (Thematic Apperception), Raven's Progressive Matrices
               </p>
             </div>
             <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-              <h4 class="font-medium text-sm mb-1">Group Discussion</h4>
+              <h4 class="font-medium text-sm mb-1">Group Tasks (GTO)</h4>
               <p class="text-xs text-gray-600 dark:text-gray-400">
-                Assesses leadership, teamwork, and communication in group settings
+                Group discussions, command tasks, planning exercises to assess leadership
               </p>
             </div>
             <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
@@ -84,11 +84,14 @@
             </div>
           </div>
           
-          <div class="mt-4 p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-            <p class="text-xs text-purple-700 dark:text-purple-300">
-              <strong>Note:</strong> Psychological assessment is qualifying in nature. 
-              Focus on being genuine rather than trying to game the system.
-            </p>
+          <div class="mt-4">
+            <NuxtLink 
+              to="/exam/psychological"
+              class="inline-flex items-center gap-2 text-sm text-accent hover:underline"
+            >
+              <UIcon name="i-lucide-arrow-right" />
+              Detailed Psychological Assessment Guide
+            </NuxtLink>
           </div>
         </div>
 
@@ -108,13 +111,13 @@
             <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
               <h4 class="font-medium text-sm mb-1">Panel Composition</h4>
               <p class="text-xs text-gray-600 dark:text-gray-400">
-                Chairman + 4-5 members including subject experts and senior bureaucrats
+                FPSC Chairman/Member + 4-5 members (retired bureaucrats, academics, subject experts)
               </p>
             </div>
             <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
               <h4 class="font-medium text-sm mb-1">Duration</h4>
               <p class="text-xs text-gray-600 dark:text-gray-400">
-                20-30 minutes on average, can extend for exceptional candidates
+                20-45 minutes depending on candidate responses and panel interest
               </p>
             </div>
             <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
