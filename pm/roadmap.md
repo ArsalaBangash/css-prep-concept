@@ -68,10 +68,10 @@ Transform CSS Prep Pakistan into the **definitive online resource** for CSS exam
    - ✅ Political Science - `/pages/subjects/political-science.vue`
    - ✅ Criminology - `/pages/subjects/criminology.vue`
    - ✅ Environmental Science - `/pages/subjects/environmental-science.vue`
-   - ❌ Sociology - HIGH PRIORITY (mother of social sciences, essay support)
-   - ❌ European History - HIGH PRIORITY (trending, replacing USA History)
-   - ❌ History of USA - MEDIUM (include "targeting" warning)
-   - ❌ Public Administration - MEDIUM (popular, relevant to job)
+   - ✅ Sociology - `/pages/subjects/sociology.vue`
+   - ✅ European History - `/pages/subjects/european-history.vue`
+   - ✅ History of USA - `/pages/subjects/history-of-usa.vue`
+   - ✅ Public Administration - `/pages/subjects/public-administration.vue`
    - ❌ Psychology - LOWER
    - ❌ Economics - LOWER (include low-scoring warning)
 
@@ -162,41 +162,29 @@ The following can be executed simultaneously by different agents:
 
 | Stream | Pages | Status | Dependencies |
 |--------|-------|--------|--------------|
-| **Stream A** | Optional subjects: Sociology, European History | ❌ READY | None - can start |
-| **Stream B** | Optional subjects: USA History, Public Admin | ❌ READY | None - can start |
+| **Stream A** | Optional subjects: Psychology, Economics | ❌ READY | None - can start |
+| **Stream B** | Optional subjects: Gender Studies, Town Planning | ❌ READY | None - can start |
 | **Stream C** | Compulsory deep-dives: Precis, Pakistan Affairs | ❌ READY | None - can start |
 | **Stream D** | Compulsory deep-dives: Current Affairs, GSA, Islamic Studies | ❌ READY | None - can start |
 | **Stream E** | Quick wins on existing pages | ✅ COMPLETE | - |
 
 ### Agent Task Assignments
+**Agent Task 1: Psychology Page**
+- Create `/pages/subjects/psychology.vue`
+- Highlight scoring consistency, overlapping content with Essay & Interview
+- Include syllabus focus on biological vs social psychology, developmental stages, Pakistani applications
 
-**Agent Task 1: Sociology Page**
-- Create `/pages/subjects/sociology.vue`
-- Use existing subject pages as template (see `/pages/subjects/international-relations.vue`)
-- Include: syllabus breakdown, books (Giddens, Haralambos), scoring trends, essay support angle
-- Research: "Mother of social sciences", consistent scoring, overlaps with Essay/Current Affairs
+**Agent Task 2: Economics Page**
+- Create `/pages/subjects/economics.vue`
+- Warning about recent low scoring, but include strategy for candidates with academic background
+- Detail macro/micro split, Pakistan economy data sources, and book list (Samuelson, Dornbusch, S. Akbar Zaidi)
 
-**Agent Task 2: European History Page**
-- Create `/pages/subjects/european-history.vue`
-- Include: syllabus (French Revolution → World Wars), books, scoring trends
-- Research: "Trending" subject, logical flow makes it easier, replacing USA History as safer choice
-
-**Agent Task 3: History of USA Page**
-- Create `/pages/subjects/history-of-usa.vue`
-- Include: syllabus, books, **prominent "targeting" warning**
-- Research: Traditionally popular but heavily targeted recently with low scores
-
-**Agent Task 4: Public Administration Page**
-- Create `/pages/subjects/public-administration.vue`
-- Include: syllabus, books, relevance to actual CSS job
-- Research: Popular, overlaps with Governance, average scoring
-
-**Agent Task 5: English Precis & Composition Guide**
+**Agent Task 3: English Precis & Composition Guide**
 - Create `/pages/prep/precis.vue`
 - Include: technique rules, daily practice schedule, books (Wren & Martin)
 - Research: Technical filter, GRE/SAT level vocabulary
 
-**Agent Task 6: GSA Deep-Dive Guide**
+**Agent Task 4: GSA Deep-Dive Guide**
 - Enhance `/pages/syllabus/compulsory.vue` OR create `/pages/prep/gsa.vue`
 - Include: Shafiq vs Kashmiri book debate, section weights, math tips
 - Research: Only compulsory subject with "mathematical certainty" in scoring

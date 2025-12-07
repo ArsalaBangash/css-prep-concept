@@ -62,10 +62,10 @@ This document maps research findings to current site content, identifying gaps a
 | Political Science | Full analysis | ✅ Created | `/subjects/political-science.vue` |
 | Criminology | Full analysis | ✅ Created | `/subjects/criminology.vue` |
 | Environmental Science | "Rising star" analysis | ✅ Created | `/subjects/environmental-science.vue` |
-| Sociology | Mentioned | ❌ Missing | **AGENT TASK: Create `/subjects/sociology.vue`** |
-| European History | "Trending" alternative | ❌ Missing | **AGENT TASK: Create `/subjects/european-history.vue`** |
-| History of USA | "Targeted" warning | ❌ Missing | **AGENT TASK: Create `/subjects/history-of-usa.vue`** |
-| Public Administration | Mentioned | ❌ Missing | **AGENT TASK: Create `/subjects/public-administration.vue`** |
+| Sociology | Mentioned | ✅ Created | `/subjects/sociology.vue` |
+| European History | "Trending" alternative | ✅ Created | `/subjects/european-history.vue` |
+| History of USA | "Targeted" warning | ✅ Created | `/subjects/history-of-usa.vue` |
+| Public Administration | Mentioned | ✅ Created | `/subjects/public-administration.vue` |
 | Psychology | Mentioned | ❌ Missing | Lower priority |
 | Economics | Warning about low scoring | ❌ Missing | Lower priority |
 
@@ -118,10 +118,10 @@ This document maps research findings to current site content, identifying gaps a
 | Political Science page | Create `/subjects/political-science` | ✅ Done |
 | Criminology page | Create `/subjects/criminology` | ✅ Done |
 | Environmental Science page | Create `/subjects/environmental-science` | ✅ Done |
-| Sociology page | Create `/subjects/sociology` | **❌ AGENT TASK** |
-| European History page | Create `/subjects/european-history` | **❌ AGENT TASK** |
-| History of USA page | Create `/subjects/history-of-usa` | **❌ AGENT TASK** |
-| Public Administration page | Create `/subjects/public-administration` | **❌ AGENT TASK** |
+| Sociology page | Create `/subjects/sociology` | ✅ Done |
+| European History page | Create `/subjects/european-history` | ✅ Done |
+| History of USA page | Create `/subjects/history-of-usa` | ✅ Done |
+| Public Administration page | Create `/subjects/public-administration` | ✅ Done |
 | Interview page enhancement | Enhance `/exam/interview` | ✅ Done |
 | Essay past papers | Add to `/prep/essay` | ✅ Done |
 

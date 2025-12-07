@@ -7,7 +7,7 @@ This directory contains all project planning, content strategy, and UX documenta
 | Phase | Status | Completion |
 |-------|--------|------------|
 | Phase 1: Quick Wins | ✅ COMPLETE | 100% |
-| Phase 2: SEO Content Expansion | 🔄 IN PROGRESS | ~65% |
+| Phase 2: SEO Content Expansion | 🔄 IN PROGRESS | ~80% |
 | Phase 3: Authority Content | ❌ NOT STARTED | 0% |
 | Phase 4: Polish & Optimization | ❌ NOT STARTED | 0% |
 
@@ -18,7 +18,7 @@ This directory contains all project planning, content strategy, and UX documenta
 - ✅ Eligibility page (age calc, attempts, dual nationality)
 - ✅ Trends page (targeting phenomenon, volatility)
 - ✅ Psychological Assessment page (NEW)
-- ✅ 4 Subject pages: IR, Political Science, Criminology, Environmental Science
+- ✅ 8 Subject pages: IR, Political Science, Criminology, Environmental Science, Sociology, European History, History of USA, Public Administration
 - ✅ Navigation: Subjects dropdown, index page, cross-links
 - ✅ Essay page enhanced (past papers 2020-2024)
 - ✅ Interview page enhanced (psych link, panel details)
@@ -29,12 +29,10 @@ This directory contains all project planning, content strategy, and UX documenta
 
 ### High Priority Subject Pages (can run in parallel)
 
-| Task | File to Create | Template |
-|------|----------------|----------|
-| **Sociology** | `/pages/subjects/sociology.vue` | Copy structure from `international-relations.vue` |
-| **European History** | `/pages/subjects/european-history.vue` | Copy structure from `international-relations.vue` |
-| **History of USA** | `/pages/subjects/history-of-usa.vue` | Include "targeting" warning prominently |
-| **Public Administration** | `/pages/subjects/public-administration.vue` | Copy structure from `political-science.vue` |
+| Task | File to Create | Notes |
+|------|----------------|-------|
+| **Psychology** | `/pages/subjects/psychology.vue` | Highlight scoring consistency, overlap with Interview/Psych assessment |
+| **Economics** | `/pages/subjects/economics.vue` | Include low-scoring warning + data-driven prep plan |
 
 ### Medium Priority Prep Guides
 

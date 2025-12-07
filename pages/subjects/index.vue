@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'CSS Optional Subject Guides - Deep Dives & Preparation Strategies',
-  description: 'In-depth guides for CSS optional subjects: International Relations, Political Science, Criminology, Environmental Science. Syllabus, books, scoring trends, and expert tips.',
+  description: 'In-depth guides for CSS optional subjects: IR, Political Science, Criminology, Environmental Science, Sociology, European History, History of USA, Public Administration.',
   ogTitle: 'CSS Subject Guides - Complete Preparation Strategies',
-  ogDescription: 'Detailed guides for popular CSS optional subjects with syllabus, books, scoring trends, and preparation strategies.',
+  ogDescription: 'Detailed guides for 8 CSS optional subjects with syllabus, books, scoring trends, and preparation strategies.',
 })
 
 const subjects = [
@@ -55,13 +55,61 @@ const subjects = [
     description: 'Replacing Gender Studies as safe option. Objective marking, Essay overlap.',
     tags: ['Group V', '100 Marks', 'Rising Star'],
   },
+  {
+    name: 'Sociology',
+    slug: 'sociology',
+    marks: 100,
+    papers: 1,
+    icon: 'i-lucide-users',
+    color: 'indigo',
+    status: 'Stable',
+    statusColor: 'green',
+    description: 'Mother of social sciences. Essay + Current Affairs overlap, consistent 60+ scoring.',
+    tags: ['Group VI', '100 Marks', 'Essay Support'],
+  },
+  {
+    name: 'European History',
+    slug: 'european-history',
+    marks: 100,
+    papers: 1,
+    icon: 'i-lucide-book-open',
+    color: 'orange',
+    status: 'Rising',
+    statusColor: 'green',
+    description: 'Trending alternative to USA History. Chronological, predictable questions.',
+    tags: ['Group IV', '100 Marks', 'Trending'],
+  },
+  {
+    name: 'History of USA',
+    slug: 'history-of-usa',
+    marks: 100,
+    papers: 1,
+    icon: 'i-lucide-flag',
+    color: 'rose',
+    status: 'Volatile',
+    statusColor: 'yellow',
+    description: 'High-risk optional currently targeted by FPSC. Only for specialists.',
+    tags: ['Group IV', '100 Marks', 'High Risk'],
+  },
+  {
+    name: 'Public Administration',
+    slug: 'public-administration',
+    marks: 100,
+    papers: 1,
+    icon: 'i-lucide-building',
+    color: 'cyan',
+    status: 'Moderate',
+    statusColor: 'yellow',
+    description: 'Governance-focused subject; overlaps with Essay, Interview, and actual CSP work.',
+    tags: ['Group II', '100 Marks', 'Governance'],
+  },
 ]
 
 const comingSoon = [
   { name: 'Economics', group: 'I' },
-  { name: 'Sociology', group: 'VI' },
-  { name: 'Public Administration', group: 'II' },
-  { name: 'History of Pakistan & India', group: 'IV' },
+  { name: 'Psychology', group: 'VII' },
+  { name: 'Gender Studies', group: 'V' },
+  { name: 'Town Planning & Urban Management', group: 'II' },
 ]
 </script>
 
