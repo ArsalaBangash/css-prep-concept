@@ -30,12 +30,14 @@ const subjectsDropdown = [
   { label: 'All Subjects', to: '/subjects', icon: 'i-lucide-layout-grid' },
   { label: 'International Relations', to: '/subjects/international-relations', icon: 'i-lucide-globe' },
   { label: 'Political Science', to: '/subjects/political-science', icon: 'i-lucide-landmark' },
+  { label: 'Economics', to: '/subjects/economics', icon: 'i-lucide-trending-down' },
   { label: 'Criminology', to: '/subjects/criminology', icon: 'i-lucide-shield' },
   { label: 'Environmental Science', to: '/subjects/environmental-science', icon: 'i-lucide-leaf' },
   { label: 'Sociology', to: '/subjects/sociology', icon: 'i-lucide-users' },
   { label: 'European History', to: '/subjects/european-history', icon: 'i-lucide-book-open' },
   { label: 'History of USA', to: '/subjects/history-of-usa', icon: 'i-lucide-flag' },
   { label: 'Public Administration', to: '/subjects/public-administration', icon: 'i-lucide-building' },
+  { label: 'Psychology', to: '/subjects/psychology', icon: 'i-lucide-brain' },
 ]
 
 const resourcesDropdown = [

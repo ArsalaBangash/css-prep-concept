@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'CSS Optional Subject Guides - Deep Dives & Preparation Strategies',
-  description: 'In-depth guides for CSS optional subjects: IR, Political Science, Criminology, Environmental Science, Sociology, European History, History of USA, Public Administration.',
+  description: 'Guides for CSS optional subjects: IR, Political Science, Economics, Criminology, Environmental Science, Sociology, Psychology, European History, History of USA, Public Administration.',
   ogTitle: 'CSS Subject Guides - Complete Preparation Strategies',
-  ogDescription: 'Detailed guides for 8 CSS optional subjects with syllabus, books, scoring trends, and preparation strategies.',
+  ogDescription: 'Detailed guides for 10 CSS optional subjects with syllabus, books, scoring trends, and preparation strategies.',
 })
 
 const subjects = [
@@ -103,13 +103,36 @@ const subjects = [
     description: 'Governance-focused subject; overlaps with Essay, Interview, and actual CSP work.',
     tags: ['Group II', '100 Marks', 'Governance'],
   },
+  {
+    name: 'Psychology',
+    slug: 'psychology',
+    marks: 100,
+    papers: 1,
+    icon: 'i-lucide-brain',
+    color: 'teal',
+    status: 'High Scoring',
+    statusColor: 'green',
+    description: 'Behavioral science with direct Interview payoff; terminology-heavy but rewarding.',
+    tags: ['Group VII', '100 Marks', 'Behavioral Science'],
+  },
+  {
+    name: 'Economics',
+    slug: 'economics',
+    marks: 200,
+    papers: 2,
+    icon: 'i-lucide-trending-down',
+    color: 'red',
+    status: 'Low Scoring',
+    statusColor: 'red',
+    description: 'High-risk subject; consistently low scoring 2022-2024. Only for specialists.',
+    tags: ['Group I', '200 Marks', 'High Risk'],
+  },
 ]
 
 const comingSoon = [
-  { name: 'Economics', group: 'I' },
-  { name: 'Psychology', group: 'VII' },
   { name: 'Gender Studies', group: 'V' },
   { name: 'Town Planning & Urban Management', group: 'II' },
+  { name: 'English Precis & Composition', group: 'Compulsory' },
 ]
 </script>
 
