@@ -250,7 +250,7 @@ const keyDates = [
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
           Explore More
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           <NuxtLink 
             to="/exam/mpt"
             class="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-5 hover:border-accent transition-colors"
@@ -267,6 +267,15 @@ const keyDates = [
             <UIcon name="i-lucide-pen-tool" class="w-8 h-8 text-gray-400 group-hover:text-accent mb-3" />
             <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Written Exam</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400">Main examination details</p>
+          </NuxtLink>
+
+          <NuxtLink 
+            to="/exam/psychological"
+            class="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-5 hover:border-accent transition-colors"
+          >
+            <UIcon name="i-lucide-brain" class="w-8 h-8 text-gray-400 group-hover:text-accent mb-3" />
+            <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Psych Assessment</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">WAT, TAT & group tasks</p>
           </NuxtLink>
           
           <NuxtLink 

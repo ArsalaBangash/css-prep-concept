@@ -346,6 +346,49 @@ function getRiskBadge(risk: string) {
           </NuxtLink>
         </div>
       </div>
+
+      <!-- In-Depth Subject Guides -->
+      <div class="mt-8 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-4">📚 In-Depth Subject Guides</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+          Detailed preparation guides with syllabus breakdown, recommended books, scoring trends, and expert tips.
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <NuxtLink 
+            to="/subjects/international-relations"
+            class="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <UIcon name="i-lucide-globe" class="text-blue-500" />
+            <span class="text-sm font-medium">International Relations</span>
+          </NuxtLink>
+          <NuxtLink 
+            to="/subjects/political-science"
+            class="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <UIcon name="i-lucide-landmark" class="text-purple-500" />
+            <span class="text-sm font-medium">Political Science</span>
+          </NuxtLink>
+          <NuxtLink 
+            to="/subjects/criminology"
+            class="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <UIcon name="i-lucide-shield" class="text-red-500" />
+            <span class="text-sm font-medium">Criminology</span>
+          </NuxtLink>
+          <NuxtLink 
+            to="/subjects/environmental-science"
+            class="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <UIcon name="i-lucide-leaf" class="text-green-500" />
+            <span class="text-sm font-medium">Environmental Science</span>
+          </NuxtLink>
+        </div>
+        <div class="mt-4 text-center">
+          <NuxtLink to="/subjects" class="text-sm text-accent hover:underline">
+            View all subject guides →
+          </NuxtLink>
+        </div>
+      </div>
     </UContainer>
   </div>
 </template>

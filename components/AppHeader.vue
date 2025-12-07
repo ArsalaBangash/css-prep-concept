@@ -13,7 +13,8 @@ const examDropdown = [
   { label: 'Eligibility', to: '/exam/eligibility', icon: 'i-lucide-user-check' },
   { label: 'MPT (Preliminary)', to: '/exam/mpt', icon: 'i-lucide-file-check' },
   { label: 'Written Exam', to: '/exam/written', icon: 'i-lucide-pen-tool' },
-  { label: 'Interview & Psych', to: '/exam/interview', icon: 'i-lucide-users' },
+  { label: 'Psychological Assessment', to: '/exam/psychological', icon: 'i-lucide-brain' },
+  { label: 'Interview', to: '/exam/interview', icon: 'i-lucide-users' },
   { label: 'Important Dates', to: '/exam/dates', icon: 'i-lucide-calendar' },
 ]
 
@@ -23,6 +24,14 @@ const syllabusDropdown = [
   { label: 'Optional Subjects', to: '/syllabus/optional', icon: 'i-lucide-layers' },
   { label: 'Subject Selection Guide', to: '/syllabus/selection', icon: 'i-lucide-compass' },
   { label: 'Scoring Trends', to: '/syllabus/trends', icon: 'i-lucide-trending-up' },
+]
+
+const subjectsDropdown = [
+  { label: 'All Subjects', to: '/subjects', icon: 'i-lucide-layout-grid' },
+  { label: 'International Relations', to: '/subjects/international-relations', icon: 'i-lucide-globe' },
+  { label: 'Political Science', to: '/subjects/political-science', icon: 'i-lucide-landmark' },
+  { label: 'Criminology', to: '/subjects/criminology', icon: 'i-lucide-shield' },
+  { label: 'Environmental Science', to: '/subjects/environmental-science', icon: 'i-lucide-leaf' },
 ]
 
 const resourcesDropdown = [
@@ -179,6 +188,53 @@ watch(() => route.path, () => {
               >
                 <NuxtLink
                   v-for="item in syllabusDropdown"
+                  :key="item.to"
+                  :to="item.to"
+                  class="flex items-center gap-3 px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                  @click="closeDropdownImmediate"
+                >
+                  <span :class="[item.icon, 'w-4 h-4 text-gray-500 dark:text-gray-400']" />
+                  <span>{{ item.label }}</span>
+                </NuxtLink>
+              </div>
+            </Transition>
+          </div>
+
+          <!-- Subjects Dropdown -->
+          <div 
+            class="relative"
+            @mouseenter="openDropdown('subjects')"
+            @mouseleave="closeDropdown"
+          >
+            <button
+              :class="[
+                'flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors',
+                isDropdownActive(subjectsDropdown) || activeDropdown === 'subjects'
+                  ? 'text-gray-900 dark:text-white' 
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+              ]"
+              @click="activeDropdown = activeDropdown === 'subjects' ? null : 'subjects'"
+            >
+              Subjects
+              <svg class="w-4 h-4 transition-transform" :class="{ 'rotate-180': activeDropdown === 'subjects' }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <Transition
+              enter-active-class="transition duration-150 ease-out"
+              enter-from-class="opacity-0 translate-y-1"
+              enter-to-class="opacity-100 translate-y-0"
+              leave-active-class="transition duration-100 ease-in"
+              leave-from-class="opacity-100 translate-y-0"
+              leave-to-class="opacity-0 translate-y-1"
+            >
+              <div 
+                v-if="activeDropdown === 'subjects'"
+                class="absolute left-0 top-full mt-1 w-56 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-lg py-1 z-50"
+              >
+                <NuxtLink
+                  v-for="item in subjectsDropdown"
                   :key="item.to"
                   :to="item.to"
                   class="flex items-center gap-3 px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -369,6 +425,27 @@ watch(() => route.path, () => {
             </h3>
             <NuxtLink
               v-for="item in syllabusDropdown"
+              :key="item.to"
+              :to="item.to"
+              :class="[
+                'flex items-center gap-3 px-3 py-2 text-sm rounded-md transition-colors',
+                route.path === item.to 
+                  ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-900' 
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-900/50'
+              ]"
+            >
+              <span :class="[item.icon, 'w-4 h-4']" />
+              <span>{{ item.label }}</span>
+            </NuxtLink>
+          </div>
+
+          <!-- Subjects Section -->
+          <div class="mb-4">
+            <h3 class="px-3 py-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+              Subject Guides
+            </h3>
+            <NuxtLink
+              v-for="item in subjectsDropdown"
               :key="item.to"
               :to="item.to"
               :class="[
